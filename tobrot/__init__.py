@@ -63,10 +63,9 @@ AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "539295917").spli
 # the download location, where the HTTP Server runs
 DOWNLOAD_LOCATION = "./DOWNLOADS"
 # Telegram maximum file upload size
-MAX_FILE_SIZE = 50000000
+MAX_FILE_SIZE = 2097152000
 TG_MAX_FILE_SIZE = 2097152000
-FREE_USER_MAX_FILE_SIZE = 50000000
-AUTH_CHANNEL.append(539295917)
+FREE_USER_MAX_FILE_SIZE = 2097152000
 AUTH_CHANNEL.append(OWNER_ID)
 # chunk size that should be used with requests
 CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", "128"))
